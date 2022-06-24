@@ -1,0 +1,35 @@
+{
+  "name": "cat-shark-app",
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/**/*"
+  ],
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.10.0"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "web:dev": "npm run start --workspace=web"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chloe-Ciou/cat-shark-app.git"
+  },
+  "keywords": [],
+  "author": "Chloe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chloe-Ciou/cat-shark-app/issues"
+  },
+  "homepage": "https://github.com/Chloe-Ciou/cat-shark-app#readme",
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.1"
+  }
+}
