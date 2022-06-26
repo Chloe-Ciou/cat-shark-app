@@ -10,7 +10,7 @@ This repository contains the frontend and backend of cat shark app
 git clone https://github.com/Chloe-Ciou/cat-shark-app.git
 ```
 
-2. switch to Node.js version `v16.10`
+2. switch to Node version `v16.10`
 
 ```
 nvm use
@@ -29,3 +29,7 @@ npm run web:dev
 ```
 
 5. start backend server
+
+```
+npm run backend:dev
+```

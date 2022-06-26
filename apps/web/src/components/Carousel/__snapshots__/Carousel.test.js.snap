@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Carousel /> should match snapshots 1`] = `
+<section
+  class="carousel"
+  data-testid="carousel"
+>
+  <div
+    class="slides"
+  >
+    <div
+      class="button-group"
+    >
+      <button
+        class="active"
+        data-testid="category_btn_cat"
+      >
+        Cats
+      </button>
+      <button
+        class=""
+        data-testid="category_btn_shark"
+      >
+        Sharks
+      </button>
+    </div>
+    <div
+      class="slide fade active"
+      data-testid="slide_0"
+    >
+      <img
+        alt="alt_1"
+        class="image"
+        src="src_1"
+      />
+    </div>
+    <div
+      class="slide fade "
+      data-testid="slide_1"
+    >
+      <img
+        alt="alt_2"
+        class="image"
+        src="src_2"
+      />
+    </div>
+    <div
+      class="slide fade "
+      data-testid="slide_2"
+    >
+      <img
+        alt="alt_3"
+        class="image"
+        src="src_3"
+      />
+    </div>
+    <span
+      class="prev"
+    >
+      <button
+        aria-label="previous slide"
+        data-testid="prev_btn"
+      >
+        ❮
+      </button>
+    </span>
+    <span
+      class="next"
+    >
+      <button
+        aria-label="next slide"
+        data-testid="next_btn"
+      >
+        ❯
+      </button>
+    </span>
+  </div>
+</section>
+`;
