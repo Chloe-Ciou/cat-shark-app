@@ -1,0 +1,20 @@
+name: Unit Test
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+      
+jobs:
+  unit-test:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: npm install
+      - name: Run unit tests (frontend)
+        run: npm run test-client
+      - name: Run unit tests (backend)
+        run: npm run test-server
