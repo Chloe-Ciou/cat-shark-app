@@ -1,6 +1,6 @@
-# Cat Shark Mono-repo
+# Cat Shark App
 
-This repository contains the frontend and backend of cat shark app
+This repository contains the frontend and backend of cat shark app.
 
 ## Development Setup
 
@@ -22,14 +22,10 @@ nvm use
 npm install
 ```
 
-4. start frontend server
+4. start server
 
 ```
-npm run web:dev
-```
-
-5. start backend server
-
-```
-npm run backend:dev
+npm run start-server
+&
+npm run start-server:watch (watch mode)
 ```

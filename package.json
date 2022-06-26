@@ -1,44 +1,56 @@
 {
-  "name": "cat-shark-app",
-  "version": "1.0.0",
-  "workspaces": [
-    "apps/**/*"
-  ],
-  "engines": {
-    "npm": "7.24.0",
-    "node": "16.10.0"
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "path": "^0.12.7",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "standard": "^17.0.0",
+    "url": "^0.11.0",
+    "web-vitals": "^2.1.4"
   },
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "web:dev": "npm run start --workspace=web",
-    "web:test": "npm run test --workspace=web",
-    "web:build": "npm run build  --workspace=web",
-    "web:test.watch": "npm run test:watch --workspace=web",
-    "backend:test": "npm run test --workspace=backend",
-    "backend:dev": "npm run start --workspace=backend",
-    "backend:watch": "npm run watch --workspace=backend"
+    "build": "react-scripts build",
+    "start-client": "react-scripts start",
+    "start-server": "npm run build && (cd server && npm start)",
+    "start-server:watch": "npm run build && (cd server && npm run watch)",
+    "test-client": "react-scripts test --watchAll=false",
+    "test-client:watch": "react-scripts test",
+    "test-server": "cd server && npm run test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Chloe-Ciou/cat-shark-app.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "keywords": [],
-  "author": "Chloe",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Chloe-Ciou/cat-shark-app/issues"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "homepage": "https://github.com/Chloe-Ciou/cat-shark-app#readme",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.18.2",
     "eslint": "^8.18.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.5.3",
-    "eslint-plugin-n": "^15.2.3",
-    "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.1",
-    "jest": "^28.1.1"
+    "sass": "^1.53.0"
   }
 }

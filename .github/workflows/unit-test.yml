@@ -11,10 +11,10 @@ jobs:
     name: Unit Tests
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v2
+      - uses: actions/checkout@v2
       - name: Install modules
         run: npm install
       - name: Run unit tests (frontend)
-        run: npm run web:test
+        run: npm run test-client
       - name: Run unit tests (backend)
-        run: npm run backend:test
+        run: npm run test-server
