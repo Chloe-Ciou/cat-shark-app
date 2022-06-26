@@ -41,18 +41,18 @@ const Carousel = () => {
   };
 
   return (
-    <section className='carousel' data-testid="carousel">
-      <div className='slides'>
-        <div className='button-group'>{renderButtonGroup()}</div>
+    <section className="carousel" data-testid="carousel">
+      <div className="slides">
+        <div className="button-group">{renderButtonGroup()}</div>
         {slidesLength
           ? images.map((slide, index) => <CarouselItem key={`${slide.alt}_${index}`} index={index} slide={slide} isActive={currentSlideIndex === index} />)
-          : <div className='no-content'>No photos</div>
+          : <div className="no-content">No photos</div>
         }
         <span className="prev">
-          <button data-testid="prev_btn" aria-label='previous slide' onClick={renderPrevSlide}>&#10094;</button>
+          <button data-testid="prev_btn" aria-label="previous slide" onClick={renderPrevSlide}>&#10094;</button>
         </span>
         <span className="next">
-          <button data-testid="next_btn" aria-label='next slide' onClick={renderNextSlide}>&#10095;</button>
+          <button data-testid="next_btn" aria-label="next slide" onClick={renderNextSlide}>&#10095;</button>
         </span>
       </div>
     </section >

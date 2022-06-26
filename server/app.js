@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 // setup router
 app.get("/images", validateImagesMetadataRequest, getImages);
 
-// setup custom error handler and generic 404
+// setup custom error handler
 app.use(mwError);
 
 app.use((req, res, next) => {
